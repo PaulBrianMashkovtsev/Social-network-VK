@@ -2,13 +2,15 @@ import React from 'react';
 import s from "./Post.module.css";
 import cow from "../../../../img/cow.png";
 
-const Post = () => {
+const Post = (props) => {
+
     return (
                 <div className={s.item}>
                     <img src={cow} alt="cow"/>
-                    post 1
+                    {props.message}
                     <div>
-                    <span>Like</span>
+                    <span>Likes</span>
+                        {props.likes}
                     </div>
                 </div>
             

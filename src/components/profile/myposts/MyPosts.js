@@ -12,9 +12,9 @@ const MyPosts = () => {
             </div>
 
             <div className={s.posts}>
-                <Post />
-                <Post />
-                <Post />
+                <Post message ="Hi, how are you?" Likes='3'/>
+                <Post message="I`m on a vacation" Likes='9'/>
+
             </div>
         </div>
     );
